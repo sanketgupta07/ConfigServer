@@ -1,0 +1,27 @@
+info:
+  component: Config Server [to store apps properties in git based store]
+  
+spring:
+  application:
+    name: sg-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sanketgupta07/git-repository.git
+          
+server:
+  port: 8888  
+
+encrypt: 
+  key: ba9c401d-0e84-4cb7-93f1-6804a6abcfc9  
+    
+security:
+  user:
+    name: '{cipher}f39674c27a2108b596e74ed6c32ca265fd246c4a4d647bca437e79ed7918d688'#sanket
+    password: '{cipher}9b8cd58e814dcdf861452daaa0d9d3260ef609b1082ff2520850a4c46eb83962'#password 
+    
+  basic:
+    enabled: true
+  enable-csrf: false
+     
